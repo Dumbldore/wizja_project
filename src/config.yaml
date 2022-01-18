@@ -1,0 +1,25 @@
+#   0. Type of source is declared here: frames, video
+type_of_source: video
+#type_of_source: frames
+
+
+path_to_source: /home/mikolaj/Programs/wizja/highway.mp4
+#path_to_source: /home/mikolaj/Videos/reda/reda1
+
+#TRACKING
+#Gating threshold for cosine distance metric (object appearance)
+max_cosine_distance: 0.5
+#Max IOU distance if if feature distance failes:
+max_iou_distance: 0.5
+#Non-maxima suppression threshold: Maximum detection overlap
+nms_max_overlap: 0.4
+#Metric for NarestNeigbourDistance: euclidean or cosine
+metric: cosine
+
+camera_params: {
+  fov_horizontal: 90,
+  fov_vertical: 59,
+  pitch: 52,
+  camera_height: 10
+}
+
